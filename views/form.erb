@@ -1,10 +1,13 @@
 <h1>This is a form page</h1>
 
 <form action='/games' method="POST">
-  <input ... name="game[name]" />
-  <input ... name="game[difficulty]" /> 
-  <input ... name="game[players]" />   
-
+  <input ... name="game[][name]" />
+  <input ... name="game[][difficulty]" /> 
+  <input ... name="game[][players]" />   
+  <input ... name="game[][name]" />
+  <input ... name="game[][difficulty]" /> 
+  <input ... name="game[][players]" /> 
+  
   <button type="submit">Go</button>
 </form>
 

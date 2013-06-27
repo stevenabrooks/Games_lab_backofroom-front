@@ -1,5 +1,15 @@
-NAME:  <%= @game[:name] %><br>
+<!-- NAME:  <%= @game[:name] %><br>
 DIFFICULTY:  <%= @game[:difficulty] %><br>
 GAME:  <%= @game[:players] %><br>
-
+ -->
 this should have worked
+<ul>
+  <% @game.each do |game| %>
+  <li>  NAME:  <%= game[:name] %></li><br>
+  <li>  DIFFICULTY:  <%= game[:difficulty] %></li><br>
+  <li>  GAME:  <%= game[:players] %></li><br>
+    <% end %>
+</ul>
+
+
+<!-- {"game"=>[{"name"=>"Adam", "difficulty"=>"Tough", "players"=>"a lot"}, {"name"=>"George", "difficulty"=>"Serious", "players"=>"a few"}]} -->
