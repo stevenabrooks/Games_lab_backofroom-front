@@ -4,9 +4,47 @@
   <% @game.each do |game| %>
   <li>  NAME:  <%= game[:name] %></li><br>
   <li>  DIFFICULTY:  <%= game[:difficulty] %></li><br>
-  <li>  GAME:  <%= game[:players] %></li><br>
+  <ol>  <% game[:players].each do |player| %><br>
+    <li>  <%= player[:name] %> </li>
+        <% end %>
+  </ol>
     <% end %>
+
 </ul>
 
-
-<!-- {"game"=>[{"name"=>"Adam", "difficulty"=>"Tough", "players"=>"a lot"}, {"name"=>"George", "difficulty"=>"Serious", "players"=>"a few"}]} -->
+<!-- {"game"=>[{"name"=>"George",
+ "difficulty"=>"so weak",
+ "players"=>[{"name"=>"1"},
+ {"name"=>"2"},
+ {"name"=>"3"},
+ {"name"=>"4"},
+ {"name"=>"5"}]},
+ {"name"=>"George 2",
+ "difficulty"=>"unreal weak",
+ "players"=>[{"name"=>"1"},
+ {"name"=>"2"},
+ {"name"=>"3"},
+ {"name"=>"4"},
+ {"name"=>"5"}]},
+ {"name"=>"Jorge",
+ "difficulty"=>"Seriously?",
+ "players"=>[{"name"=>"1"},
+ {"name"=>"2"},
+ {"name"=>"3"},
+ {"name"=>"4"},
+ {"name"=>"5"}]},
+ {"name"=>"Jeremly Lin",
+ "difficulty"=>"Tough",
+ "players"=>[{"name"=>"1"},
+ {"name"=>"2"},
+ {"name"=>"3"},
+ {"name"=>"4"},
+ {"name"=>"5"}]},
+ {"name"=>"G Lin",
+ "difficulty"=>"Terrible",
+ "players"=>[{"name"=>"1"},
+ {"name"=>"2"},
+ {"name"=>"3"},
+ {"name"=>"4"},
+ {"name"=>"5"}]}]}
+ -->
