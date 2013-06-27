@@ -1,13 +1,13 @@
 <h1>This is a form page</h1>
 
 <form action='/games' method="POST">
-  <input ... name="game[][name]" />
-  <input ... name="game[][difficulty]" /> 
-  <input ... name="game[][players]" />   
-  <input ... name="game[][name]" />
-  <input ... name="game[][difficulty]" /> 
-  <input ... name="game[][players]" /> 
-  
+  <% 5.times do %>
+    NAME: <input ... name="game[][name]" /><br>
+    DIFFICULTY: <input ... name="game[][difficulty]" /> <br>
+    PLAYERS: <input ... name="game[][players]" /> <br> 
+  <% end %> 
+
+
   <button type="submit">Go</button>
 </form>
 
