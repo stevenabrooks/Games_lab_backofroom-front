@@ -10,6 +10,7 @@ class Games < Sinatra::Base
   end
 
   post '/games' do
+    debugger
     @game = params[:game]
     erb :view
   end

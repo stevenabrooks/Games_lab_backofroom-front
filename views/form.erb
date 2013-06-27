@@ -4,14 +4,18 @@
   <% 5.times do %>
     NAME: <input ... name="game[][name]" /><br>
     DIFFICULTY: <input ... name="game[][difficulty]" /> <br>
-    PLAYERS: <input ... name="game[][players]" /> <br> 
+    <% 5.times do %>
+      PLAYERS: <input ... name="game[][players][][name]" /> <br> 
+      <% end %>
   <% end %> 
 
 
   <button type="submit">Go</button>
 </form>
 
-
+<!-- "game[]"
+"game[][players]"
+"game[][players][][names]" -->
 
 
 
